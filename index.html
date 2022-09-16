@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Basketball Scoreboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <h3>HOME</h3>
+        <div class="score-container">
+          <span class="total-points" id="home-points">0</span>
+        </div>
+        <div class="incrementer home-incrementer">
+          <span id="box-1" class="box" onclick="onePointHome()">+1</span>
+          <span id="box-2" class="box" onclick="twoPointHome()">+2</span>
+          <span id="box-3" class="box" onclick="threePointHome()">+3</span>
+        </div>
+      </div>
+      <div class="right-container">
+        <h3>VISITORS</h3>
+        <div class="score-container">
+          <span class="total-points" id="visitor-points">0</span>
+        </div>
+        <div class="incrementer">
+          <span id="box-4" class="box" onclick="onePointVisitor()">+1</span>
+          <span id="box-5" class="box" onclick="twoPointVisitor()">+2</span>
+          <span id="box-6" class="box" onclick="threePointVisitor()">+3</span>
+        </div>
+      </div>
+      <button onclick="window.location.reload()">Clear</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
